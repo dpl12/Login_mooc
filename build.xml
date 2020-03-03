@@ -1,0 +1,21 @@
+<project name="test_mooc" basedir=".">
+    <property name="test-output/lib.dir" value="test-output/lib"/>
+
+    <path id="test.classpath">
+        <!--adding the saxon jar to your classpath-->
+        <fileset dir="${test-output/lib.dir}" includes="*.jar"/>
+    </path>
+
+    <target name="transform">
+        <property name="dir" value=""/>
+
+        <mkdir dir="E:\IDEAProject\test_mooc\test-output"/>
+
+        <xslt in="E:\IDEAProject\test_mooc\test-output\testng-results.xml"
+              style="E:\IDEAProject\test_mooc\test-output\testng-results.xsl"
+              out="E:\IDEAProject\test_mooc\test-output\index11.html"
+              classpathref="test.classpath" processor="SaxonLiaison">
+            <param name="testNgXslt.outputDir" expression="E:\IDEAProject\test_mooc\test-output"/>
+        </xslt>
+    </target>
+</project>

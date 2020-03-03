@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="SaxonLiaison">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/test-output/lib/SaxonLiaison.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,1 @@
+2020-03-03 13:08:07,931 [main] INFO [testCase.LoginCase] - 这是一条log4j日志
